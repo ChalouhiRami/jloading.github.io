@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="bouton" type="button" onclick="fonction()"value="Afficher"> 
+    <ol id="myP" style="visibility:hidden;">
+        <li>kharma</li>
+        <li>battikh</li>
+        <li>laptop</li>
+    </ol>
+
+<script>
+    function fonction() {
+    var f = document.getElementById('myP');
+    if (f.style.visibility === 'hidden') 
+    {
+    document.getElementById('bouton').value="Masquer"
+    f.style.visibility = 'visible';
+}
+ else 
+{
+    document.getElementById('bouton').value="Afficher"
+    f.style.visibility = 'hidden';
+}
+}
+</script>
+
+</body>
+</html>
